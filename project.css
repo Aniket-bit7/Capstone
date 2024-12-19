@@ -77,6 +77,78 @@ body{
     border-radius: 25px;
     border: 1px solid rgba(255, 255, 255, 0);
 }
+@media (max-width: 1200px) {
+    .navbar {
+        width: 100%;
+        padding: 16px;
+        
+    }
+    .navleft a, .navright a {
+        font-size: 16px;
+    }
+    .navcenter .logo {
+        font-size: 40px;
+    }
+    .container-header {
+        font-size: 6vw;
+    }
+}
+@media (max-width: 768px) {
+    .navbar {
+        width: fit-content;
+        padding: 5px;
+    }
+    .navleft, .navright {
+        flex-direction: row;
+    }
+    .navleft a, .navright a {
+        font-size: 16px;
+    }
+    .navcenter .logo {
+        font-size: 28px;
+        padding: 20px;
+    }
+    .container-header {
+        font-size: 7vw; 
+        white-space: normal; 
+        overflow: visible; 
+        line-height: 1.3;
+        padding: 0 10px;
+    }
+    .container-header-image {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 480px) {
+  .navbar {
+      width: 100%;
+      padding: 5px 10px;
+      justify-content: space-between; 
+      overflow: hidden; 
+  }
+  .navleft, .navright {
+      flex-wrap: wrap; 
+      justify-content: flex-start; 
+      gap: 5px;
+  }
+
+  .navleft a, .navright a {
+      font-size: 14px;  
+      overflow: hidden;
+  }
+
+  .navcenter {
+      flex-grow: 1; 
+      text-align: center; 
+  }
+
+  .navcenter .logo {
+      font-size: 20px; 
+      padding: 5px 0;
+      max-width: 80%;  
+      overflow: hidden;
+  }
+}
 .container-2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -84,14 +156,12 @@ body{
     padding: 0;
     justify-items: center;
 }
-
 .container-2-images {
     width: 100%;
     height: auto;
     overflow: hidden;
     border-radius: 15px;
 }
-
 .container-2-images-title {
     font-family: "Archivo", sans-serif;
     font-size: 20px;
@@ -100,7 +170,6 @@ body{
     margin: 0;
     margin-top: 5px;
 }
-
 .container-2-images-desc {
     font-family: "Archivo", sans-serif;
     font-size: 16px;
@@ -109,3 +178,160 @@ body{
     margin: 0;
     margin-top: 5px;
 }
+.container-2-images-desc {
+    font-family: "Archivo", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+    margin-top: 5px;
+}
+@media (max-width: 768px) {
+    .container-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 480px) {
+    .container-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .container-header {
+        font-size: 6vw;
+    }
+
+    .navbar {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+
+
+.container3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #fff;
+    flex-wrap: wrap; 
+  }
+  
+  .text-section {
+    flex: 1;
+    max-width: 50%;
+    margin-right: 20px; 
+  }
+  
+  .text-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-family: "Chivo", sans-serif;
+  }
+  
+  .text-section p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: "Archivo", sans-serif;
+  }
+  
+  .text-section button {
+    background-color: rgba(146, 141, 211, 1);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Archivo", sans-serif;
+  }
+  
+  .text-section button:hover {
+    background-color: rgb(37, 33, 98);
+    color: white;
+  }
+  
+  .image-section {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 120px;
+    margin-left: 80px;
+  }
+  
+  @media (max-width: 768px) {
+    .container3 {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .text-section {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .image-section {
+      max-width: 100%;
+      margin-top: 20px;
+      margin-left: 0;
+    }
+  
+    .image-section img {
+      width: 80%;
+      margin: 0;
+    }
+  
+    .text-section h1 {
+      font-size: 2.5rem;
+    }
+  
+    .text-section p {
+      font-size: 1rem;
+    }
+  
+    .text-section button {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container3 {
+      flex-direction: column;
+      text-align: center;
+      padding: 15px;
+    }
+  
+    .text-section {
+      margin-bottom: 20px;
+    }
+  
+    .text-section h1 {
+      font-size: 2rem;
+    }
+  
+    .text-section p {
+      font-size: 1rem;
+    }
+  
+    .text-section button {
+      font-size: 0.9rem;
+      padding: 8px 18px;
+    }
+  
+    .image-section img {
+      width: 100%;
+      margin: 0;
+    }
+  }
