@@ -77,3 +77,35 @@ body{
     border-radius: 25px;
     border: 1px solid rgba(255, 255, 255, 0);
 }
+.container-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0;
+    justify-items: center;
+}
+
+.container-2-images {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.container-2-images-title {
+    font-family: "Archivo", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+    margin-top: 5px;
+}
+
+.container-2-images-desc {
+    font-family: "Archivo", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+    margin-top: 5px;
+}
