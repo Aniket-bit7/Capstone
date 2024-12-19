@@ -335,3 +335,28 @@ body{
       margin: 0;
     }
   }
+  .header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 50px;
+    border-top: 1px solid white;
+}
+.header h1 {
+    font-size: 2rem;
+    line-height: 1.5;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+    font-family: "Chivo", sans-serif;
+}
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.2rem;
+    }
+}
