@@ -740,3 +740,178 @@ body{
       font-size: 24px;
     }
   }
+  .outer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 20px;
+  }
+  
+  .newsletter-container {
+    text-align: center;
+    padding: 2rem;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+
+  .newsletter-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: white;
+    font-family: "Chivo", sans-serif;
+  }
+  
+  .newsletter-subtitle {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2rem;
+    font-family: "Archivo", sans-serif;
+  }
+  
+  .input-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+  
+.input-box {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 3rem; 
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.36);
+    user-select: none;
+    cursor: pointer; 
+  }
+  
+
+  .input-box:hover {
+    border-color: #ff007c;
+  }
+  
+  .subscribe-button {
+    background-color: #937bff;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 4rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 300px;
+    margin-top: 1rem;
+    font-family: "Archivo", sans-serif;
+  }
+  
+  .subscribe-button:hover {
+    background-color: #805fd9;
+  }
+  
+  .skip-link {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-family: "Archivo", sans-serif;
+  }
+  
+  .skip-link:hover {
+    color: #fff;
+  }
+ @media (max-width: 768px) {
+    .newsletter-container {
+      padding: 1.5rem;
+      max-width: 100%;
+    }
+  
+    .newsletter-title {
+      font-size: 1.5rem;
+    }
+  
+    .newsletter-subtitle {
+      font-size: 0.9rem;
+    }
+    .input-box {
+      width: 2.5rem;
+      height: 2.5rem;
+      font-size: 1.2rem;
+    }
+    .subscribe-button {
+      width: 250px;
+      font-size: 0.9rem;
+    }
+  }
+  @media (max-width: 480px) {
+    .newsletter-title {
+      font-size: 1.2rem;
+    }
+    .newsletter-subtitle {
+      font-size: 0.8rem;
+    }
+    .input-box {
+      width: 2rem;
+      height: 2rem;
+      font-size: 1rem;
+    }
+  
+    .subscribe-button {
+      width: 200px;
+      font-size: 0.8rem;
+    }
+  }
+.footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    width: 100%;
+}
+.contactus {
+    border: 1px solid gray;
+    border-radius: 1rem;
+    padding: 8px;
+    cursor: pointer;
+    font-family: "Archivo", sans-serif;
+}
+.contactus:hover {
+    background-color: #805fd9;
+}
+#last1 {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    font-family: "Chivo", sans-serif;
+}
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    #last1, .contactus {
+        margin-bottom: 10px;
+    }
+    .contactus {
+        margin-left: 0;
+        border-radius: 20px;
+        padding: 12px;
+    }
+}
+
+
