@@ -914,4 +914,36 @@ body{
     }
 }
 
+.text-section button:hover {
+  background-color: rgb(37, 33, 98);
+  color: white;
+  transform: scale(1.05); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
 
+.navleft a:hover, .navright a:hover {
+  color: #ff007c;
+  text-decoration: underline;
+  font-size: 18px;
+  transition: color 0.2s, font-size 0.2s;
+}
+
+.comment-card1:hover, .comment-card2:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.input-box:hover {
+  border-color: #ff007c;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.container-2:hover {
+  background-color: rgba(255, 255, 255, 0.05); 
+  transition: background-color 0.3s;
+}
