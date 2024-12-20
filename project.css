@@ -205,9 +205,6 @@ body{
         padding: 10px;
     }
 }
-
-
-
 .container3 {
     display: flex;
     justify-content: space-between;
@@ -964,4 +961,17 @@ body{
 #image-section:hover{
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(255, 255, 255, 0.5);
+}
+.images_1, .images_2{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.images_1:hover, .images_2:hover{
+  transform: scale(1.05);
+}
+
+.images_3, .images_4, .images_5{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.images_3:hover, .images_4:hover, .images_5:hover{
+  transform: scale(1.05);
 }
