@@ -926,7 +926,7 @@ body{
 }
 .comment-card1:hover, .comment-card2:hover {
   transform: translateY(-10px); 
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 8px 16px purple; 
   transition: transform 0.3s, box-shadow 0.3s;
 }
 .input-box:hover {
